@@ -1,0 +1,34 @@
+{
+  "name": "jquery-dt-bootstrap-wrapper",
+  "title": "Jquery Datatables Bootstrap Wrapper",
+  "description": "A datatables bootstrap wrapper plugin which allows the creation of simple layouts and extra functionality with minimal effort.",  
+  "main": [
+    "src/jquery-dt-bootstrap-wrapper.js"
+  ],
+  "authors": [
+    "David Whitehead <david__whitehead2@hotmail.com>"
+  ],
+  "license": "MIT",  
+  "repository": {
+	"type": "git",
+	"url": "git://github.com/lilpug/jquery-dt-bootstrap-wrapper.git"
+  },
+  "dependencies": {
+    "jquery": ">=1.7",
+	"bootstrap": ">=3",
+	"datatables": ">=1.10.12",
+  },
+  "keywords": [
+    "dt",
+    "bootstrap",
+    "jquery",
+    "jquery-dt-bootstrap-wrapper",
+	"datatables",
+	"plugins",
+	"datatables-plugin"
+  ],  
+  "bugs": "https://github.com/lilpug/jquery-dt-bootstrap-wrapper/issues",
+  "homepage": "https://github.com/lilpug/jquery-dt-bootstrap-wrapper",
+  "docs": "https://github.com/lilpug/jquery-dt-bootstrap-wrapper",
+  "download": "https://github.com/lilpug/jquery-dt-bootstrap-wrapper"
+}
