@@ -3,7 +3,7 @@
   "title": "Jquery Datatables Bootstrap Wrapper",
   "description": "A datatables bootstrap wrapper plugin which allows the creation of simple layouts and extra functionality with minimal effort.",  
   "main": [
-    "src/jquery-dt-bootstrap-wrapper.js"
+    "src/jquery-dt-bootstrap-wrapper.js"	
   ],
   "authors": [
     "David Whitehead <david__whitehead2@hotmail.com>"
@@ -16,7 +16,7 @@
   "dependencies": {
     "jquery": ">=1.7",
 	"bootstrap": ">=3",
-	"datatables": ">=1.10.12",
+	"datatables": ">=1.10.12"
   },
   "keywords": [
     "dt",
