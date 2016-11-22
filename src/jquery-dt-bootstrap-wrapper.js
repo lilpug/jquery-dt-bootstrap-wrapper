@@ -1,7 +1,7 @@
 /*!
-    Title: Jquery Datatables Bootstrap Wrapper 1.0
+    Title: Jquery Datatables Bootstrap Wrapper
     URL: https://github.com/lilpug/jquery-dt-bootstrap-wrapper
-    Version: 1.0
+    Version: 1.1
     Author: David Whitehead
     Copyright (c) David Whitehead
     Copyright license: MIT
@@ -588,7 +588,8 @@
                 storeElement.datecolumnsformat = options["datecolumnsformat"];
 
                 //This section adds the sort extension methods to the date columns to ensure it correctly sorts givent he format
-                if ($.fn.dataTable != null && $.fn.dataTable.ext != null && $.fn.dataTable.ext.oSort && storeElement.datecolumnsformat != null) {
+                if ($.fn.dataTable != null && $.fn.dataTable.ext != null && $.fn.dataTable.ext.oSort && storeElement.datecolumnsformat != null)
+                {
                     //Defines the sorting function names for that particular moment format thats been passed
                     var functionNamePre = "date-search-" + storeElement.datecolumnsformat.replace(/\s+/g, '-') + "-pre";
                     var functionNameAsc = "date-search-" + storeElement.datecolumnsformat.replace(/\s+/g, '-') + "-asc";
@@ -598,7 +599,8 @@
                     var attri = {};
 
                     //Checks if the name already exists in the sorting, as we do not want to add duplicates
-                    if ($.fn.dataTable.ext.oSort.functionNamePre == null) {
+                    if (!$.fn.dataTable.ext.oSort.hasOwnProperty(functionNamePre))
+                    {
                         attri[functionNamePre] = function (a) {
 
                             //Used to store the columns date format
@@ -630,21 +632,21 @@
                     }
 
                     //Checks if the name already exists in the sorting, as we do not want to add duplicates
-                    if ($.fn.dataTable.ext.oSort.functionNameAsc == null) {
+                    if (!$.fn.dataTable.ext.oSort.hasOwnProperty(functionNameAsc)) {
                         attri[functionNameAsc] = function (a, b) {
                             return ((a < b) ? -1 : ((a > b) ? 1 : 0));
                         };
                     }
 
                     //Checks if the name already exists in the sorting, as we do not want to add duplicates
-                    if ($.fn.dataTable.ext.oSort.functionNameDesc == null) {
+                    if (!$.fn.dataTable.ext.oSort.hasOwnProperty(functionNameDesc)) {
                         attri[functionNameDesc] = function (a, b) {
                             return ((a < b) ? 1 : ((a > b) ? -1 : 0));
                         }
                     }
 
                     //Only adds the extension if we any of the three have been added as they do not currently exist
-                    if ($.fn.dataTable.ext.oSort.functionNamePre == null || $.fn.dataTable.ext.oSort.functionNameAsc == null || $.fn.dataTable.ext.oSort.functionNameDesc == null) {
+                    if (!$.fn.dataTable.ext.oSort.hasOwnProperty(functionNamePre) || !$.fn.dataTable.ext.oSort.hasOwnProperty(functionNameAsc) || !$.fn.dataTable.ext.oSort.hasOwnProperty(functionNameDesc)) {
                         $.extend($.fn.dataTable.ext.oSort, attri);
                     }
                 }

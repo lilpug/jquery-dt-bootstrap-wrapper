@@ -1,5 +1,8 @@
 # Jquery Datatables Bootstrap Wrapper
 ## Required Libraries
+### Bootstrap 3
+This plugin requires any version of bootstrap version 3.
+
 ### Datatables
 This plugin is a wrapper for the datatables plugin which can be found here https://datatables.net/.
 
