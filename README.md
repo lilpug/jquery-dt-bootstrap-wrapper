@@ -1,4 +1,7 @@
 # Jquery Datatables Bootstrap Wrapper
+
+Jquery Datatables Bootstrap Wrapper is a plugin that automates the creation of a bootstrap formated Datatable. The plugin also extends the original option set to give more functionality with very little effort required.
+
 ## Required Libraries
 ### Bootstrap 3
 This plugin requires any version of bootstrap version 3.
@@ -17,17 +20,26 @@ Download the required libraries and reference them
 
 Download the plugin and reference the minified JS file in the dist folder
 
-you can then use the plugin as follows:-
+
+##Initialising The Plugin
+**Basic functionality**
 
 ```javascript
 <script>
 	//Note: the settings object is the same you would be passing into datatables
+	
+	//Creates a datatable with the settings supplied
 	$('TABLE ELEMENT HERE').datatablesWrapper("init", settings);
+	
+	//Gets an already existing datatable table variable passed back
+	var table = $('TABLE ELEMENT HERE').datatablesWrapper("get");
+	
+	//Destroys an already existing datatable table
+	$('TABLE ELEMENT HERE').datatablesWrapper("destroy");
 </script>
 ```
 
-If you are using the state saving functionality in datatables you can clear it on first load of a table using the following:-
-
+**If you are using the state saving functionality in datatables you can clear it on first load of a table**
 ```javascript
 <script>
 	//First load to clear the state
