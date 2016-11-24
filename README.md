@@ -22,7 +22,7 @@ Download the plugin and reference the minified JS file in the dist folder
 
 
 ##Initialising The Plugin
-**Basic functionality**
+Basic functionality
 
 ```javascript
 <script>
@@ -39,7 +39,7 @@ Download the plugin and reference the minified JS file in the dist folder
 </script>
 ```
 
-**If you are using the state saving functionality in datatables you can clear it on first load of a table**
+If you are using the state saving functionality in datatables you can clear it on first load of a table
 ```javascript
 <script>
 	//First load to clear the state
