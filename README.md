@@ -1,6 +1,6 @@
 # Jquery Datatables Bootstrap Wrapper
 
-Jquery Datatables Bootstrap Wrapper is a plugin that automates the creation of a bootstrap formated Datatable. The plugin also extends the original option set to give more functionality with very little effort required.
+Jquery Datatables Bootstrap Wrapper is a plugin that automates the creation of a bootstrap formatted Datatable. The plugin also extends the original option set to give more functionality with very little effort required.
 
 ## Required Libraries
 ### Bootstrap 3
